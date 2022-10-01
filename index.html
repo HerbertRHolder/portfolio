@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Herbert Holder</title>
+</head>
+
+<body>
+    <header>
+        <!-- +++++++++++++++++++++LOGO++++++++++++++ -->
+        <figure><a href="index.html"><img src="https://live.staticflickr.com/65535/52003317023_b36fba4199_m.jpg"
+                    height="50px" class="logo" alt=""></a></figure>
+        <nav aria-roledescription="Navigation on the top center of webpage" id="nav-container" class="nav-container">
+
+            <ul class="nav--top--center">
+
+                <li aria-roledescription="menu item"><a href="#"><a href="Program_concepts.html">Program Concepts</a>
+                </li>
+                <li aria-roledescription="menu item"><a href="#"><a href="algorithms.html">Algorithms and Data
+                            Structures</a></li>
+                <li aria-roledescription="menu item"><a href="Favorite-books.html">Favorite Books</a></li>
+            </ul>
+
+
+        </nav>
+
+
+        <div aria-roledescription="Navigation on the top right">
+            <ul class="nav--top--right">
+
+                <li><button class="header-btn" data-modal-target="#modal">Contact</button></li>
+
+            </ul>
+        </div>
+        <menu class="menu-container" id="menu-container">
+
+            <ion-icon id="menu-icon" size="large" name="menu-outline" onclick="dropdown(this);"></ion-icon>
+
+
+
+
+
+            <menu class="menu-active" id="menu-active">
+                <ul class="sidebar-nav">
+                    <a href="Program_concepts.html">
+                        <li>Program Concepts</li>
+                    </a>
+                    <a href="algorithms.html">
+                        <li>Algorithms</li>
+                    </a>
+                    <a href="dataStructures.html">
+                        <li>Data Structures</li>
+                    </a>
+                    <a href="Favorite-books.html">
+                        <li>Favorite Books</li>
+                    </a>
+                </ul>
+
+            </menu>
+        </menu>
+
+
+    </header>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2 class="title">Add your Email</h2>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <!--         <div class="modal-body">
+              <h4>Reach Out</h4>
+           <form method="POST" action="mailto: Herbrholder@gmail.com" enctype="multipart/form-data">
+             <div class="form-inputs-containers"  >
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" size="30" required>
+            </div>
+            <div class="form-inputs-containers">
+                <label for="Email">Email</label>
+                <input type="email" id="email" size="30" required>
+            </div>
+            <div class="message">
+                <label for="message">Send a message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+            </div>
+              <button type="submit" class="send-btn">Send</button>
+
+              </form> 
+        </div> -->
+
+
+
+
+
+    </div>
+    <div id="overlay"></div>
+
+    <Main id="main" onclick="layer_remove(this)">
+
+        <Section class="hero-area">
+
+            <div class="profile-Container">
+                <div class="profile-container_frame">
+
+                </div>
+                <h3><span>Herbert Holder</span><br>Results.Driven.<span style="font-size:1rem">Imagineer</span></h3>
+                <h4>Website Developer</h4>
+                <!--                <button class="header-btn" data-modal-target="#modal">Contact</button> -->
+
+            </div>
+        </Section>
+        <section class="cover-letter-container">
+            <div class="cover-letter">
+                <div class="letter" role="doc-introduction">
+                    <p>IT Technician with a Computer Science background. An inquisitive individual with exceptional
+                        administrative, organizational, and interpersonal skills. Ability to work collaboratively in a
+                        team environment with an emphasis on meeting deadlines in a high-paced environment. A worker
+                        with the skills to handle confidential matters and information with discretion and diplomacy.
+                        Attended the university to gain college level reading, writing, math and science skills.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="about-area">
+            <div class="about-container">
+                <h4>Education</h4>
+                <div class="about">
+
+                    <img src="https://live.staticflickr.com/65535/52003316478_026475ac35_m.jpg" width="170px"
+                        alt="Pace University Logo">
+
+                    <p>Attended Pace University with a major in Computer Science and gained college level reading,
+                        writing, math and science skills.</p>
+                </div>
+            </div>
+
+            <div class="about-container">
+                <h4>Skillset</h4>
+                <div class="left">
+
+                    <li>C++ Language</li>
+                    <p>
+                        <li>Algorithms</li>
+                    </p>
+                    <p>
+                        <li>Datastructures</li>
+                    </p>
+                    <p>
+                        <li>OOP/OOD</li>
+                    </p>
+                    <p>
+                        <li>Javascript ES6</li>
+                    </p>
+                    <p>
+                        <li>AJAX</li>
+                    </p>
+                    <p>
+                        <li>REST</li>
+                    </p>
+                    <p>
+                        <li>JSON</li>
+                    </p>
+                    <p>
+                        <li>XML</li>
+                    </p>
+                    <p>
+                        <li>HTML CSS</li>
+                    </p>
+                    <p>
+                        <li>React Framework</li>
+                    </p>
+                    <p>
+                        <li>Adobe PS & AI</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-container">
+                <h4>History</h4>
+                <div class="about">
+
+                    <img src="https://live.staticflickr.com/65535/52004013399_ceb4c9b0fc_m.jpg" height="100px" alt="">
+
+                    <p>Veteran of The United States Marine Corps embedded in me are <span>Honour Courage
+                            Commitment</span> and Discipline</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="title-projects">
+            <h1>My Projects</h1>
+        </div>
+        <section class="project-area">
+            <a href="https://music.herbertrholder.repl.co">
+                <div class="project"></div>
+            </a>
+            <div class="project"></div>
+            <div class="project"></div>
+        </section>
+
+        <section class="my-story-wrapper">
+        <div class="my-story skills">
+            <div class="my-story-title">
+                <h1>My Story</h1>
+            </div>
+            <div class="story-wrapper">
+                <div class="cover-letter story">
+                    
+                </div>     
+            </div>
+            <div class="story-wrapper">
+                <div class="cover-letter story">
+
+                </div>     
+            </div>
+            <div class="story-wrapper">
+                <div class="cover-letter story">
+
+                </div>     
+            </div>
+            <div class="story-wrapper">
+                <div class="cover-letter story">
+
+                </div>     
+            </div>
+            <div class="story-wrapper">
+                <div class="cover-letter story">
+
+                </div>     
+            </div>
+
+
+
+
+
+
+            <!-- <h1>My Story</h1>
+            <div class="cover-letter story">
+
+                My interest in tech started out at a young age my grandfather and I would take old PC's from the trash and repair them. 
+            </div>
+            <div class="cover-letter story">
+                From there I pursued my interests in High-school where I attended classes in computer repair learning the ins and outs of the CPU, RAM, Storage.
+            </div>
+            <div class="cover-letter story">
+                Joined the military after High-School. This was out of a sense of duty and a way to be of service to people. While in the military I would watch videos on programming and even read books on the topic. 
+            </div>
+            <div class="cover-letter story">
+                Got out the military in 2018 an enrolled in College to pursue a Computer Science degree.Learned various core programming concepts like Data Strutures and Algorithms and C++ became my first language Placed the schooling on pause in 2021.
+            </div>
+            <div class="cover-letter story">
+                Applied for a Logistics job that ended up changing into an IT company. I learned various concepts about servers,protocols,terminal scripts and ports
+            </div>
+            <div class="cover-letter story">
+
+            </div> -->
+
+
+        </div>
+    </section>
+    </Main>
+    <footer onclick="layer_remove(this)">
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</body>
+
+</html>

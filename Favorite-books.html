@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Favorite Books</title>
+</head>
+<body>
+    <header>
+        <!-- +++++++++++++++++++++LOGO++++++++++++++ -->
+         <figure><a href="index.html"><img src="https://live.staticflickr.com/65535/52003317023_b36fba4199_m.jpg" height="50px" class="logo" alt=""></a></figure>
+        <nav aria-roledescription="Navigation on the top center of webpage" id="nav-container" class="nav-container">
+            
+            <ul class="nav--top--center">
+                <!-- <li aria-roledescription="menu item" style="list-style: none;text-decoration: none"><a href="algorithms.html">Bio</a></li> -->
+                <li aria-roledescription="menu item"><a href="#"><a href="Program_concepts.html">Program Concepts</a></li>
+                <li aria-roledescription="menu item"><a href="#"><a href="algorithms.html">Algorithms and Data Structures</a></li>
+                <li aria-roledescription="menu item"><a href="Favorite-books.html">Favorite Books</a></li>
+            </ul>
+            
+            
+        </nav>
+       
+
+        <div aria-roledescription="Navigation on the top right">
+            <ul class="nav--top--right">
+               
+                <li><button class="header-btn">Contact</button></li>
+               
+            </ul>
+        </div>
+        <menu class="menu-container" id="menu-container">
+       
+        <ion-icon id="menu-icon" size="large" name="menu-outline" onclick="dropdown(this);"></ion-icon>
+        
+
+       
+        
+           
+        <menu class="menu-active" id="menu-active">
+            <ul class="sidebar-nav">
+                <a href="Program_concepts.html">
+                    <li>Program Concepts</li>
+                </a>
+                <a href="algorithms.html">
+                    <li>Algorithms</li>
+                </a>
+                <a href="dataStructures.html">
+                    <li>Data Structures</li>
+                </a>
+                <a href="Favorite-books.html">
+                    <li>Favorite Books</li>
+                </a>
+              <li> 
+            
+               
+                <button class="header-btn" data-modal-target="#modal">Contact</button>
+                </li>
+            
+      
+            
+
+          </menu>
+          </menu>
+
+        
+    </header> 
+    <div class="toggle-container">
+        <a href="#"><img id="toggleOff" height="70px" src="C:\projects\portfolio\assets\img\togOff.png" alt=""></a>
+    </div> 
+  <Main id="main" onclick="layer_remove(this)">
+    <section class="algo-hero">
+        <h1>Favorite Books</h1>
+    </section>
+      </Main>
+    <footer onclick="layer_remove(this)">
+
+    </footer>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+     <script src="script.js"></script>
+</body>
+</html>
