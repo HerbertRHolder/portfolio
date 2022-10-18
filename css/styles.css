@@ -426,12 +426,14 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3889E9", en
 }
 
 .my-story-wrapper{
+  margin-top:16rem;
   width: 100%;
   display: flex;
   justify-content: center;
   height: fit-content;
 }
 .my-story-title {
+  
   width: 100%;
   height: fit-content;
   display: flex;
