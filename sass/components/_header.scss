@@ -57,4 +57,62 @@ ul{display: flex;flex-direction: row;}
   
 }
 
-/* +++++++++++++++++++++++++++++++++HEADER+++++++++++++++++++++++++++++++++++++ */
+.menu_cont {
+    display: none;
+}
+
+/* .menu_cont:hover{
+    background-color: #dedede;
+} */
+
+
+
+
+/* +++++ menu animation +++++++++++++++++++++++++++++++++++ */
+.ms1{
+    transition: all .1s ease;
+    /* transform: rotate(45deg); */
+}
+.ms1{
+    transform: rotate(45deg);
+}
+.ms2{
+    transition: all .1s ease;
+}
+.ms2{
+    opacity: 0;
+}
+.ms3 {
+    transition: all .1s ease;
+} 
+.ms3 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+} 
+/* +++++++++++++++++++++++++++ */
+.ms1-flip{
+    transition: all .1s ease;
+    /* transform: rotate(45deg); */
+}
+.ms1-flip{
+    transform: rotate(0deg);
+}
+.ms2-flip{
+    transition: all .1s ease;
+}
+.ms2-flip{
+    opacity: 100%;
+}
+.ms3-flip {
+    transition: all .1s ease;
+} 
+.ms3-flip {
+    transform: rotate(0deg);
+    position: relative;
+    top: 0px;
+} 
+
+
+
+/* End of media max-width 820px */

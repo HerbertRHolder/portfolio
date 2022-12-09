@@ -14,7 +14,13 @@
 </head>
 
 <body>
-
+    
+    <nav class="menu_cont" id="menu-cont" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <div class="menu-streak" id="ms1"></div>
+    <div class="menu-streak" id="ms2"></div>
+    <div class="menu-streak" id="ms3"></div>
+</nav>
     <header>
         <!-- +++++++++++++++++++++LOGO++++++++++++++ -->
         <figure><a href="index.html"><img src="https://live.staticflickr.com/65535/52003317023_b36fba4199_m.jpg"
@@ -40,19 +46,82 @@
             <ul class="nav--top--right">
 
                 <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-bs-whatever="@mdo">Contact</button></li>
+                        data-bs-whatever="@mdo">Contact</button>
+                </li>
 
             </ul>
         </div>
 
-        <div class="menu_cont" id="menu-cont">
-            <div class="menu-streak" id="ms1"></div>
-            <div class="menu-streak" id="ms2"></div>
-            <div class="menu-streak" id="ms3"></div>
-        </div>
+
 
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container-fluid">
 
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div id="overlay"></div>
 
@@ -62,23 +131,23 @@
 
 
 
-    <Main id="main" onclick="layer_remove(this)">
+    <Main id="main" .profile-container_frame { width: 169px; height: 378px; } ">
 
 
 
 
 
-        <Section class="hero-area">
+        <Section class=" hero-area">
 
-            <div class="profile-Container">
-                <div class="profile-container_frame">
-
-                </div>
-                <h3><span>Herbert Holder</span><br>Results.Driven.<span style="font-size:1rem">Imagineer</span></h3>
-                <h4>Website Developer</h4>
-                <!--                <button class="header-btn" data-modal-target="#modal">Contact</button> -->
+        <div class="profile-Container">
+            <div class="profile-container_frame">
 
             </div>
+            <h3><span>Herbert Holder</span><br>Results.Driven.<span style="font-size:1rem">Imagineer</span></h3>
+            <h4>Website Developer</h4>
+            <!--                <button class="header-btn" data-modal-target="#modal">Contact</button> -->
+
+        </div>
         </Section>
         <section class="cover-letter-container">
             <div class="cover-letter">
@@ -178,9 +247,9 @@
                     <h1>My Story</h1>
                 </div>
 
-                <div class="story-wrapper" id="hello">
+                <div class="story-wrapper" id="story1">
                     <div class="cover-letter story">
-
+                        My first language was in C++ in 2018.
                     </div>
                 </div>
                 <div class="story-wrapper">
@@ -234,21 +303,28 @@
             </div>
         </section>
     </Main>
-    <footer onclick="layer_remove(this)">
+    <footer>
 
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
     <script src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+        // let trigger = document.getElementById('story1');
+        // let options = {
+        //     animation: 'fade',
+        //     offset: 100
+        // };
+        // let scrollTrigger = new ScrollTrigger(trigger, options);
 
 
         gsap.to("#story1", {
@@ -257,8 +333,8 @@
                 start: "top center",
                 toggleActions: "restart none none none"
             },
-
-            rotation: 360,
+            animation: 'fade',
+            // rotation: 360,
             duration: 3
         });
     </script>

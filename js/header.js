@@ -1,7 +1,6 @@
-
-
 (function(){
-"use strict"
+    "use strict"
+
     let container = document.getElementById("menu-cont");
 
     function menuRevert() {
@@ -21,9 +20,8 @@
         ms1.classList.add('ms1-flip');
         ms2.classList.add('ms2-flip');
         ms3.classList.add('ms3-flip');
-    
     }
-    
+
     function menuTransform() {
         const ms1 = document.getElementById('ms1');
         const ms2 = document.getElementById('ms2');
