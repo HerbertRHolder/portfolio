@@ -122,10 +122,6 @@ ul {
   display: none;
 }
 
-/* .menu_cont:hover{
-    background-color: #dedede;
-} */
-/* +++++ menu animation +++++++++++++++++++++++++++++++++++ */
 .ms1 {
   transition: all 0.1s ease;
   /* transform: rotate(45deg); */
@@ -179,6 +175,22 @@ ul {
   transform: rotate(0deg);
   position: relative;
   top: 0px;
+}
+
+#message-text {
+  resize: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+.modal-footer .cover-letter {
+  color: #ffffff;
+}
+.modal-footer .cover-letter:hover {
+  color: #ffffff;
+  transform: none;
 }
 
 /* End of media max-width 820px */
@@ -427,6 +439,12 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 20px;
+}
+
+.cover-letter {
+  color: #000000;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 footer {
