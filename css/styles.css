@@ -146,7 +146,7 @@ ul {
 .ms3 {
   transform: rotate(-45deg);
   position: relative;
-  top: -6px;
+  top: -8px;
 }
 
 /* +++++++++++++++++++++++++++ */
@@ -544,8 +544,8 @@ footer {
     z-index: 10;
   }
   .menu-streak {
-    width: 20px;
-    height: 1px;
+    width: 35px;
+    height: 2px;
     border-radius: 1px;
     background-color: #000000;
   }
