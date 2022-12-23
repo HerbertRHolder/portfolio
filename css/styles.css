@@ -227,8 +227,8 @@ ul {
 }
 
 .profile-container_frame {
-  width: 200px;
-  height: 200px;
+  width: 169px;
+  height: 169px;
   border-radius: 50%;
   overflow: hidden;
   /* background-color: #5200c6; */
@@ -253,23 +253,20 @@ ul {
   max-width: 800px;
   height: fit-content;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  padding: 1rem 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: hsl(213deg, 80%, 57%);
   background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%);
 }
-
-.letter {
-  width: 70%;
-  height: fit-content;
-}
-
-.letter p {
+.cover-letter p {
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 .imagineer {
@@ -501,7 +498,7 @@ footer {
   }
   .profile-container_frame {
     width: 169px;
-    height: 378px;
+    height: 169px;
   }
   .sidebar-nav {
     padding-top: 1rem;

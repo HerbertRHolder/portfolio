@@ -31,8 +31,8 @@
 }
 
 .profile-container_frame {
-    width: 200px;
-    height: 200px;
+    width: 169px;
+    height: 169px;
     border-radius: 50%;
     overflow: hidden;
     /* background-color: #5200c6; */
@@ -59,24 +59,24 @@
     max-width: 800px;
     height: fit-content;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    padding: 1rem 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: hsla(213, 80%, 57%, 1);
     background: -webkit-linear-gradient(180deg, hsla(213, 80%, 57%, 1) 0%, hsla(212, 74%, 73%, 1) 100%);
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
 }
 
-.letter {
-    width: 70%;
-    height: fit-content;
-}
-
-.letter p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
 
 .imagineer {
     font-size: .1rem;
