@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 700px) {
+  header{
+    height: 4rem;
+  }
   .contact-container {
     display: flex;
   }
