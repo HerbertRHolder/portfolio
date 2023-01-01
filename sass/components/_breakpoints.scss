@@ -3,12 +3,12 @@
   .cover-letter {transition: all ease 2s;}
   .cover-letter:hover {transform: translateY(-10%);}
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
   .resume-block{
     // display: none !important;
     background-color: transparent !important;
     position: fixed;
-    top: 85%;
+    top: 90%;
     height: 72px !important;
     background-image: none;
   }
