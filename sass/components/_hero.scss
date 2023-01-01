@@ -1,11 +1,34 @@
 .hero-area {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     gap: 2rem;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+}
+.resume-block{
+    background-image: url("img/resume-quicklook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px !important;
+  }
+.ovly{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .1s ease;
+}
+.resume-btn {
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.ovly:hover{
+    background-color: rgba(0, 0, 0,.5) !important;
+   
 }
 
 .profile-Container {
@@ -76,7 +99,6 @@
         text-align: left;
     }
 }
-
 
 .imagineer {
     font-size: .1rem;
