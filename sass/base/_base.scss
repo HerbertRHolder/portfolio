@@ -12,14 +12,18 @@
   width: 100%;
   font-size: 18px;
 }
-html {min-height: 100%;}
+html {min-height: 100%;
+overflow-x: hidden;
+}
 body {
     overflow-x:hidden;
+    // overflow: ;
     background-color: #dee1e6;
 }
 a:link {text-decoration: none;color: #000000;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 main {
+  
     min-height: 100%;
     }
