@@ -520,6 +520,10 @@ footer {
   background-color: #fcfcfc;
 }
 
+.footer {
+  padding-bottom: 5rem;
+}
+
 svg {
   position: absolute;
 }
