@@ -1,4 +1,5 @@
 .hero-area {
+    position: relative;
     padding-top: 4rem;
     width: 100%;
     min-height: 100vh;
@@ -7,8 +8,10 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    z-index: -1;
 }
 .resume-block{
+    position: relative;
     background-image: url("img/resume-quicklook.png");
     background-repeat: no-repeat;
     background-position: center;

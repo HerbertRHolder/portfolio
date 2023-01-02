@@ -8,9 +8,9 @@
     // console.log(window.scrollY);
     // console.log(resume);
     if (window.scrollY >= 3264) {
-      resume.style.display = "none";
+      resume.style.visibility = "hidden";
     } else {
-        resume.style.display = "block";
+        resume.style.visibility = "visible";
 
     }
   });
