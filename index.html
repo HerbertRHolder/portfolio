@@ -16,8 +16,8 @@
 
 <body>
 
-    <img class="sqr pathed-square" id="sqr" src="css/img/Gon_4_Standing_Outline0000.png" alt="">
-    <img class="tri pathed" id="tri" src="css/img/Gon_3_Down_Standing_Outline0003.png" alt="">
+    <img class="sqr pathed-square hidden" id="sqr" src="css/img/Gon_4_Standing_Outline0000.png" alt="">
+    <img class="tri pathed hidden" id="tri" src="css/img/Gon_3_Down_Standing_Outline0003.png" alt="">
 
     <nav class="menu_cont" id="menu-cont" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -137,14 +137,17 @@
 
 
 
-        <Section class=" hero-area">
+        <Section class=" hero-area hidden">
 
             <div class="profile-Container">
-                <a href="https://github.com/HerbertRHolder">
-                    <div class="profile-container_frame">
-
-                    </div>
-                </a>
+                <button type="button" class="github-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Github">
+                    <a href="https://github.com/HerbertRHolder">
+                        <div class="profile-container_frame">
+    
+                        </div>
+                    </a>      
+                </button>
+               
                 
                 <h3>
                     <span>Herbert Holder</span>
@@ -156,7 +159,7 @@
                 <!--                <button class="header-btn" data-modal-target="#modal">Contact</button> -->
 
             </div>
-            <div class="cover-letter">
+            <div class="cover-letter hidden">
                 <p>A results-oriented Software Engineer with entry-level experience, specializing in designing custom
                     software solutions and driving new feature development. A proven track record of collaborating with
                     teams throughout the application development cycle. Adept at defining user requirements and driving
@@ -165,9 +168,8 @@
                 </p>
             </div>
             <div class="resume-block bg-light w-75 d-flex justify-content-center align-items-center">
-
                     <div class="ovly w-100 d-flex justify-content-center align-items-center">
-                        <button class="resume-btn btn btn-primary">
+                        <button  class="resume-btn btn btn-primary">
                             <a href="css/img/Herbert_Holder_Resume.pdf" download>
                                 Resume 
 
@@ -182,7 +184,7 @@
             <!-- TODO Add a download resume in this area -->
         </Section>
 
-        <section class="about-area">
+        <section class="about-area hidden">
             <div class="about-container">
                 <h4>Education</h4>
                 <div class="about">
@@ -246,10 +248,10 @@
 
         </section>
 
-        <div class="title-projects">
+        <div class="title-projects hidden">
             <h1>My Projects</h1>
         </div>
-        <section class="project-area">
+        <section class="project-area hidden">
             <!-- TODO Make sure to add your github in every project -->
 
             <a href="https://music.herbertrholder.repl.co">
@@ -267,32 +269,32 @@
                     <h1>My Story</h1>
                 </div>
 
-                <div class="story-wrapper" id="story1">
+                <div class="story-wrapper hidden" id="story1">
                     <div class="cover-letter story flex-column">
                         Majored in Computer Science, first language being C++. Studied at<br><a href="#">BMCC Community
                             College</a> <a href="#">Pace University</a>
                     </div>
                 </div>
-                <div class="story-wrapper">
+                <div class="story-wrapper hidden">
                     <div class="cover-letter story">
                         Completed several classes relating to Advanced Programming techniques like Algorithms/Data
                         Structures, Descrete Math, Calculus, and Statistics,
                     </div>
                 </div>
-                <div class="story-wrapper">
+                <div class="story-wrapper hidden">
                     <div class="cover-letter story">
                         After learning a variety of concepts decided to go the route of Software Developer with a
                         website application focus
                     </div>
                 </div>
-                <div class="story-wrapper">
+                <div class="story-wrapper hidden">
                     <div class="cover-letter story">
                         After some schooling, went back into the workforce and accepted a position as IT Technician/Help
                         Desk Support. Completed many business Solutions pertaining to Software And Hardware Service
                         Level Agreements (SLA),
                     </div>
                 </div>
-                <div class="story-wrapper">
+                <div class="story-wrapper hidden">
                     <div class="cover-letter story">
                         I had determined it was not a genuine interest. Attending and completing a Coding Bootcamp at
                         Codeup helped fully realize my skills, interests and passion.
@@ -302,7 +304,7 @@
             </div>
         </section>
     </main>
-    <section class="py-20 bg-dark overflow-hidden mt-5">
+    <section id="footer"class="  py-20 bg-dark overflow-hidden mt-5">
         <div class="container">
             <div class="text-center pb-20 border-bottom">
 
@@ -356,8 +358,10 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/anime.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tooltips.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 

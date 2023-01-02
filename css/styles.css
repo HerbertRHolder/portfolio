@@ -52,7 +52,7 @@ header {
   width: 100%;
   top: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  z-index: 100;
+  z-index: 4000;
   /* outline: dashed red; */
 }
 
@@ -197,6 +197,7 @@ ul {
 
 /* End of media max-width 820px */
 .hero-area {
+  position: relative;
   padding-top: 4rem;
   width: 100%;
   min-height: 100vh;
@@ -205,9 +206,11 @@ ul {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  z-index: -1;
 }
 
 .resume-block {
+  position: relative;
   background-image: url("img/resume-quicklook.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -264,6 +267,11 @@ ul {
   background-position: 79% 9%;
 }
 
+.github-button {
+  border: none !important;
+  background-color: transparent !important;
+}
+
 .cover-letter-container {
   margin-top: 1rem;
   width: 100%;
@@ -309,6 +317,7 @@ ul {
   gap: 1rem;
   justify-content: space-evenly;
   align-items: center;
+  z-index: -1;
 }
 
 .about-container:nth-child(1), .about-container:nth-child(2), .about-container:nth-child(3) {
@@ -591,6 +600,17 @@ svg {
   animation: trimove 30s infinite;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
 .offcanvas-body {
   padding-top: 1rem;
   display: flex;
@@ -617,9 +637,10 @@ svg {
 }
 @media (max-width: 500px) {
   .resume-block {
+    position: fixed !important;
     background-color: transparent !important;
-    position: fixed;
     top: 90%;
+    z-index: 3000;
     height: 72px !important;
     background-image: none;
   }
