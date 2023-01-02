@@ -309,15 +309,6 @@ ul {
   gap: 1rem;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #dee1e6;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
-
-.about-area:hover {
-  background-color: rgba(221, 221, 221, 0.8078431373);
 }
 
 .about-container:nth-child(1), .about-container:nth-child(2), .about-container:nth-child(3) {
@@ -392,15 +383,61 @@ ul {
   align-items: center;
 }
 
+@keyframes fra {
+  0% {
+    background-size: 190%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
 .project {
   width: 295px;
   height: 295px;
-  background-color: #30395c;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.prj2 {
+  background-image: url("img/movie-app.png");
+  background-position: center;
+  background-size: 190%;
+  background-repeat: no-repeat;
   transition: all 0.5s ease;
 }
 
-.project:hover {
-  transform: translateY(-10%);
+.prj2:hover {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra 0.5s ease;
+}
+
+.prj3 {
+  background-image: url("img/movie-app.png");
+  background-position: center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.prj3:hover {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra 0.5s ease;
+}
+
+.prj1 {
+  background-image: url("img/movie-app.png");
+  background-position: center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.prj1:hover {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra 0.5s ease;
 }
 
 .my-story-wrapper {
@@ -497,29 +534,74 @@ svg {
     offset-distance: 0%;
   }
 }
-.pathed {
-  offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
-  position: absolute;
-  animation: distance 30s infinite ease-in-out;
+@keyframes trimove {
+  0% {
+    transform: rotate(-90deg);
+  }
+  25% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(-275deg);
+  }
+  75% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-450deg);
+  }
 }
-
-.pathed-square {
-  offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
-  position: absolute;
-  animation: distance2 60s infinite ease-in-out;
+@keyframes sqrmove {
+  0% {
+    top: 30%;
+    transform: rotate(-90deg);
+  }
+  25% {
+    top: 25%;
+    transform: rotate(-180deg);
+  }
+  50% {
+    top: 30%;
+    transform: rotate(-275deg);
+  }
+  75% {
+    top: 25%;
+    transform: rotate(-360deg);
+  }
+  100% {
+    top: 30%;
+    transform: rotate(-450deg);
+  }
 }
-
 .tri {
   z-index: -1;
   position: absolute;
+  top: 10%;
   width: 20%;
+  animation: trimove 60s infinite;
 }
 
 .sqr {
   z-index: -1;
   position: absolute;
+  left: 75%;
+  top: 30%;
   width: 20%;
   offset-distance: 100%;
+  animation: trimove 30s infinite;
+}
+
+.offcanvas-body {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offcanvas-body ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 @media (min-width: 935px) {

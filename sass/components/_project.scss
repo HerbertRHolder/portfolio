@@ -21,18 +21,56 @@
     justify-content: space-evenly;
     align-items: center;
 }
+@keyframes fra {
+  0% {background-size: 190%;}
+  100%{background-size: 100%;}
+}
+
 
 .project {
-    
-    width: 295px;
-    height: 295px;
-    background-color: #30395c;
-    transition: all 0.5s ease;
+  width: 295px;
+  height: 295px;
+  background-color: transparent;
+  border-radius: 1rem;
+    // outline: dashed red;
+}
+.prj2 {
+    background-image: url("img/movie-app.png");
+    background-position: center;
+    background-size: 190%;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+.prj2:hover{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra .5s ease  ;
+}
+.prj3 {
+    background-image: url("img/movie-app.png");
+    background-position: center;
+    background-size: 190%;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+.prj3:hover{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra .5s ease  ;
+}
+.prj1 {
+    background-image: url("img/movie-app.png");
+    background-position: center;
+    background-size: 190%;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+.prj1:hover{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra .5s ease  ;
 }
 
-.project:hover {
-    transform: translateY(-10%);
-}
 
 .my-story-wrapper{
   margin-top:2rem;

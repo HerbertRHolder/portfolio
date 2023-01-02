@@ -1,58 +1,101 @@
 svg {
-    position: absolute;
+  position: absolute;
 }
+
 @keyframes distance {
-    100% {
-      offset-distance: 100%;
-    }
+  100% {
+    offset-distance: 100%;
   }
+}
+
 @keyframes distance2 {
-    100% {
-      offset-distance: 0%;
-    }
+  100% {
+    offset-distance: 0%;
   }
-// @keyframes mymove {
-//     0%   {top: 0px;
-//     transform: rotate(-90deg);
-//     left: 300px;}
-//     25%  {top: 200px;
-//     transform: rotate(-180deg);
-//     left: 400px;}
-//     50%  {top: 300px;
-//     transform: rotate(-275deg);
-//     left: 500px;}
-//     75%  {top: 200px;
-//     transform: rotate(-360deg);
-//     left: 400px;}
-//     100% {top: 0px;
-//         left: 300px;
-//     transform: rotate(-450deg);}
-//   }
-  .pathed {
-    offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
-    position: absolute;
-    animation: distance 30s infinite ease-in-out;
+}
+
+@keyframes trimove {
+  0% {
+    transform: rotate(-90deg);   
   }
-  .pathed-square {
-    offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
-    position: absolute;
-    animation: distance2 60s infinite ease-in-out;
+
+  25% {
+    transform: rotate(-180deg);
   }
+
+  50% {
+    transform: rotate(-275deg);
+  }
+
+  75% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(-450deg);
+  }
+}
+@keyframes sqrmove {
+  0% {
+    top: 30%;
+    transform: rotate(-90deg);   
   
-.tri{
-    z-index: -1;
-    position: absolute;
-    // left:20px;
-    width: 20%; 
-    // offset-path: path('#my-path');
-//   offset-distance: 0%;
-//   animation: mymove 5s infinite;
+  }
+
+  25% {
+    top: 25%;
+    transform: rotate(-180deg);
+
+  }
+
+  50% {
+    top: 30%;
+    transform: rotate(-275deg);
+
+  }
+
+  75% {
+    top: 25%;
+    transform: rotate(-360deg);
+
+  }
+
+  100% {
+    top: 30%;
+    transform: rotate(-450deg);
+  }
+}
+
+//   .pathed {
+//     offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
+//     position: absolute;
+//     animation: distance 30s infinite ease-in-out;
+//   }
+//   .pathed-square {
+//     offset-path: path("M1 282C32.8782 155.087 152.39 -66.2396 375.412 63.7582C576.182 201.189 838.791 79.1821 945 1");
+//     position: absolute;
+//     animation: distance2 60s infinite ease-in-out;
+//   }
+
+.tri {
+  z-index: -1;
+  position: absolute;
+  top: 10%;
+  // left:20px;
+  width: 20%;
+  // offset-path: path('#my-path');
+  //   offset-distance: 0%;
+  animation: trimove 60s infinite;
 
 }
+
 .sqr {
-    z-index: -1;
-    position: absolute;
-    // left:20px;
-    width: 20%; 
+  z-index: -1;
+  position: absolute;
+  left: 75%;
+  top: 30%;
+  width: 20%;
   offset-distance: 100%;
+  animation: trimove 30s infinite;
+
 }
