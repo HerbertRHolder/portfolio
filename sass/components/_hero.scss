@@ -65,7 +65,10 @@
     background-size: 200px;
     background-position: 79% 9%;
 }
-
+.github-button {
+    border: none !important;
+    background-color: transparent !important;
+}
 .cover-letter-container {
     margin-top: 1rem;
     width: 100%;

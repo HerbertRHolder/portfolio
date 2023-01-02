@@ -264,6 +264,11 @@ ul {
   background-position: 79% 9%;
 }
 
+.github-button {
+  border: none !important;
+  background-color: transparent !important;
+}
+
 .cover-letter-container {
   margin-top: 1rem;
   width: 100%;
@@ -589,6 +594,17 @@ svg {
   width: 20%;
   offset-distance: 100%;
   animation: trimove 30s infinite;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
 }
 
 .offcanvas-body {
