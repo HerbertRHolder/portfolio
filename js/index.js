@@ -10,6 +10,8 @@
     if (window.scrollY >= 3264) {
       resume.style.display = "none";
     } else {
+        resume.style.display = "block";
+
     }
   });
 
