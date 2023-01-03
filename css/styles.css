@@ -595,6 +595,17 @@ svg {
   animation: trimove 30s infinite;
 }
 
+.hidden {
+  filter: blur(5px);
+  opacity: 0;
+  transition: all 3s;
+}
+
+.show {
+  filter: blur(0px);
+  opacity: 1;
+}
+
 .offcanvas-body {
   padding-top: 1rem;
   display: flex;
