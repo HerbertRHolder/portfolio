@@ -29,6 +29,7 @@ a:link {
 
 a:visited {
   text-decoration: none;
+  color: #000000;
 }
 
 a:hover {
@@ -513,6 +514,19 @@ ul {
   text-align: center;
 }
 
+.btn-color {
+  background-color: #3687E8;
+  padding: 0;
+  padding: 1.2rem 3.2rem;
+  height: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100px;
+  font-size: 0.9rem;
+}
+
 footer {
   margin-top: 6rem;
   width: 100%;
@@ -619,6 +633,10 @@ svg {
   justify-content: start;
 }
 
+.modal-backdrop {
+  z-index: 9 !important;
+}
+
 @media (min-width: 935px) {
   .cover-letter-container {
     transform: translateY(20%);
@@ -628,15 +646,6 @@ svg {
   }
   .cover-letter:hover {
     transform: translateY(-10%);
-  }
-}
-@media (max-width: 500px) {
-  .resume-block {
-    background-color: transparent !important;
-    position: fixed;
-    top: 90%;
-    height: 72px !important;
-    background-image: none;
   }
 }
 @media (max-width: 700px) {
