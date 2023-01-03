@@ -23,13 +23,10 @@ body {
 // :root,html,body,main{
 //   overflow: hidden !important;
 // }
-a:link {text-decoration: none;}
-a:visited {color: #000000;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;color: #ffffff !important;}
-main {
-  
-    min-height: 100%;
-    }
+a:link {text-decoration: none;color: #000000 !important;}
+a:visited {color: #000000 !important;}
+a:visited {text-decoration: none;color: #000000 !important;}
+a:hover {text-decoration: none;color: #000000 !important;}
+main {min-height: 100%;}
 
   
