@@ -8,11 +8,23 @@
 .title-projects h1 {
     text-align: center;
 }
+.project-wrapper{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  p{
+    font-size: .9rem;
+    width: 250px;
 
+  }
+}
 .project-area {
-   
     margin-top: 2rem;
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
     display: flex;
     gap: 1rem;
