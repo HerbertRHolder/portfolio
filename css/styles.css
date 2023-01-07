@@ -262,6 +262,24 @@ ul {
   color: #2e70c2;
 }
 
+.profile-wrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.flag {
+  position: absolute;
+  top: 68%;
+  left: 76%;
+  width: 48px;
+  height: 50px;
+  background-image: url("img/american-flag.png");
+  background-repeat: no-repeat;
+  background-size: 69px;
+  background-position: center;
+}
+
 .profile-container_frame {
   width: 169px;
   height: 169px;
@@ -656,6 +674,20 @@ svg {
 
 .modal-backdrop {
   z-index: 9 !important;
+}
+
+.algo-main {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: calc(72px + 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+body.algo {
+  background-color: #dee1e6;
 }
 
 @media (min-width: 935px) {
