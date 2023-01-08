@@ -8,6 +8,45 @@
 
 }
 @media (max-width: 700px) {
+
+  .algo-main {
+    grid-template-columns: .2fr 2fr;
+  }
+  .table-of-content-btn {
+    background-color: #3687E8;
+    padding: .1rem;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-120%);
+    border-radius: .5rem;
+    left:83%;
+    ion-icon {
+        margin-top: 2px;
+        transform: rotate(90deg);
+        font-size: 36px;
+
+    }
+}
+.table-of-content {
+  width: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offcanvas.offcanvas-top {
+  width: 100% !important;
+  height: 200px !important;
+  top: calc(3.5rem + 4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
   header{
     height: 4rem;
   }

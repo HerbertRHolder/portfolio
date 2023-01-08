@@ -1,6 +1,6 @@
 /* ++++++++++++++++++++++header++++++++++++++++++++++++++ */
 header {
-    margin: 5px;
+    // margin: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,9 +15,9 @@ header {
     /* outline: dashed red; */
 }
 .logo{
-    transform: translateX(-50%);
+    margin-left: 0rem;
 }
-header figure {margin-left: 50px}
+header figure {margin-left: 2rem}
 .header-btn {
     background-color: #3687E8;
     width: 110px;

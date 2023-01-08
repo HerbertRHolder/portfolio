@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Algorithms And Data Structures</title>
 </head>
-<body class="algo">
+
+<body class="algo" >
+    <nav class="menu_cont" id="menu-cont" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <div class="menu-streak" id="ms1"></div>
+        <div class="menu-streak" id="ms2"></div>
+        <div class="menu-streak" id="ms3"></div>
+    </nav>
     <header>
         <!-- +++++++++++++++++++++LOGO++++++++++++++ -->
-        <figure><a href="index.html"><img src="css/img/imagineer-bg-removed-removebg-preview.png" height="50px"
-                    class="logo" alt=""></a>
+        <figure>
+            <a href="index.html">
+                <img src="css/img/imagineer-bg-removed-removebg-preview.png" height="50px" class="logo" alt="">
+            </a>
         </figure>
-
         <nav aria-roledescription="Navigation on the top center of webpage" id="nav-container" class="nav-container">
 
             <ul class="nav--top--center">
@@ -27,8 +37,12 @@
                         Concepts
                     </a>
                 </li>
-                <li aria-roledescription="menu item"><a href="#"><a href="#">Algorithms and Data
-                            Structures</a></li>
+                <li aria-roledescription="menu item">
+                    <a href="algorithms.html">
+                        Algorithms and Data
+                        Structures
+                    </a>
+                </li>
                 <li aria-roledescription="menu item"><a href="#">Favorite Books</a></li>
             </ul>
 
@@ -50,34 +64,151 @@
 
 
     </header>
-    <div class="toggle-container">
-        <a href="#"><img id="toggleOff" height="70px" src="C:\projects\portfolio\assets\img\togOff.png" alt=""></a>
-    </div> 
-   <Main class="algo-main">
-        <section class="algo-hero">
-            <h1>Algorithms and Data Structures</h1>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Send Me an Email 😁</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="mailto:herbrholder@gmail.com">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" rows="4" cols="50"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" value="Send" class="btn cover-letter">
+                        Send message
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img width="50px" src="css/img/imagineer.png" alt="logo">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Program_concepts.html">
+                                Program Concepts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Algorithms & Data Structures
+                                <a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favorite Books</a>
+                        </li>
+                        <!-- <li class="nav-item ">
+                            <button type="button" class="btn btn-color" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact</button>
+                        </li> -->
+
+                    </ul>
+                    <h2 class="mb-2">Github</h2>
+                    <a href="https://github.com/HerbertRHolder"><img width="100px" src="css/img/octocat.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="offcanvas-mini offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div> -->
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" >Toggle top offcanvas</button> -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasScrolling" data-bs-scroll="true"  data-bs-backdrop="false" aria-labelledby="offcanvasTopLabel">
+        <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+            
+        </div> -->
+
+        
+        <div class="offcanvas-body">
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+
+        <section class="table-of-content">
+           <a href="#intro">Introduction</a>
+           <a href="#">dataStructures</a>
+           <a href="#">dataStructures</a>
+           <a href="#">dataStructures</a>
+           <a href="#">dataStructures</a>
+           <a href="#">dataStructures</a>
         </section>
-        <div >
-            <h2>title 1</h2>
+
         </div>
 
-       <article class="article"></article>
-       <h2>title 2</h2>
-       <article class="article"></article>
-       <h2>title 3</h2>
-       <article class="article"></article>
-       <h2>title 4</h2>
-       <article class="article"></article>
-      
+    </div>
+
+
+
+
+    <Main class="algo-main">
+
+        
+        <menu class="table-of-content-btn" 
+        type="button" data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">
+            <ion-icon name="caret-forward-sharp"></ion-icon>
+        </menu>
+        <section class="algo-title" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+            <h1>Algorithms and Data Structures</h1>
+
+        </section>
+        <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+            <h1 id="intro">Introduction</h1>
+            <div class="cover-letter"  data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">Data structures and algorithms are fundamental concepts in computer science. Data structures are used to organize and store data efficiently, while algorithms are used to manipulate and process that data. Together, data structures and algorithms form the basis of many computer programs, and they are essential tools for improving the efficiency and performance of those programs. The study of data structures and algorithms is an important part of computer science because these concepts are used to design and analyze efficient solutions to a wide variety of problems.
+            </div>
+        </section>
+        <section class="content2">
+
+        </section>
+        <section class="content3">
+
+        </section>
+
+
     </main>
+
+
+
+
+
     <footer onclick="layer_remove(this)">
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   <script src="script.js"></script>
+    <script src="js/header.js"></script>
+
 </body>
+
 </html>
