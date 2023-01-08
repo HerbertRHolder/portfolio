@@ -13,7 +13,7 @@
     <title>Algorithms And Data Structures</title>
 </head>
 
-<body class="algo" >
+<body class="algo">
     <nav class="menu_cont" id="menu-cont" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <div class="menu-streak" id="ms1"></div>
@@ -139,26 +139,27 @@
     </div> -->
     <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" >Toggle top offcanvas</button> -->
 
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasScrolling" data-bs-scroll="true"  data-bs-backdrop="false" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasScrolling" data-bs-scroll="true"
+        data-bs-backdrop="false" aria-labelledby="offcanvasTopLabel">
         <!-- <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
             
         </div> -->
 
-        
+
         <div class="offcanvas-body">
 
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
             </button>
 
-        <section class="table-of-content">
-           <a href="#intro">Introduction</a>
-           <a href="#mergesort">Merge Sort</a>
-           <a href="#">dataStructures</a>
-           <a href="#">dataStructures</a>
-           <a href="#">dataStructures</a>
-           <a href="#">dataStructures</a>
-        </section>
+            <section class="table-of-content">
+                <a href="#intro">Introduction</a>
+                <a href="#mergesort">Merge Sort</a>
+                <a href="#quicksort">Quick Sort</a>
+                <a href="#selectionsort">Selection Sort</a>
+                <a href="#heapsort">heapsort</a>
+                <a href="#">dataStructures</a>
+            </section>
 
         </div>
 
@@ -169,10 +170,8 @@
 
     <Main class="algo-main">
 
-        
-        <menu class="table-of-content-btn" 
-        type="button" data-bs-toggle="offcanvas" 
-        data-bs-target="#offcanvasScrolling"
+
+        <menu class="table-of-content-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">
             <ion-icon name="caret-forward-sharp"></ion-icon>
         </menu>
@@ -182,33 +181,127 @@
         </section>
         <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
             <h1 id="intro">Introduction</h1>
-            <div class="cover-letter"  data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas"><p class="text-center">
-                Data structures and algorithms are fundamental concepts in computer science. Data structures are used to organize and store data efficiently, while algorithms are used to manipulate and process that data. Together, data structures and algorithms form the basis of many computer programs, and they are essential tools for improving the efficiency and performance of those programs. The study of data structures and algorithms is an important part of computer science because these concepts are used to design and analyze efficient solutions to a wide variety of problems. Feeling Nerdy?...Well Check out my Algorithms analysis project in C++ on <span><a style="color:#ffffff !important; text-decoration:underline;" href="https://replit.com/@HerbertRHolder/SortingProject20#main.cpp">Replit!</a></span> and <span><a style="color:#ffffff !important; text-decoration:underline;" href=" https://github.com/HerbertRHolder/Algorithm-Analysis/blob/master/main.cpp">Github</a></span>
-            </p>
+            <div class="cover-letter" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+                <p class="text-center">
+                    Data structures and algorithms are fundamental concepts in computer science. Data structures are
+                    used to organize and store data efficiently, while algorithms are used to manipulate and process
+                    that data. Together, data structures and algorithms form the basis of many computer programs, and
+                    they are essential tools for improving the efficiency and performance of those programs. The study
+                    of data structures and algorithms is an important part of computer science because these concepts
+                    are used to design and analyze efficient solutions to a wide variety of problems. Feeling
+                    Nerdy?...Well Check out my Algorithms analysis project in C++ on <span><a
+                            style="color:#ffffff !important; text-decoration:underline;"
+                            href="https://replit.com/@HerbertRHolder/SortingProject20#main.cpp">Replit!</a></span> and
+                    <span><a style="color:#ffffff !important; text-decoration:underline;"
+                            href=" https://github.com/HerbertRHolder/Algorithm-Analysis/blob/master/main.cpp">Github</a></span>
+                </p>
             </div>
         </section>
         <section class="content2 text-center pt-5 d-flex gap-3 justify-content-start flex-column align-items-center">
             <h1 id="mergesort">Merge Sort</h1>
             <div class="paper">
-                One algorithm we can talk about is the mergesort algorithm. It is an 
-                algorithm that uses a technique known as divide-and-conquer which breaks down a problem into smaller pieces. This breaking down process makes it more efficient in solving each individual problem separately.  
+                One algorithm we can talk about is the mergesort algorithm. It is an
+                algorithm that uses a technique known as divide-and-conquer which breaks down a problem into smaller
+                pieces. This breaking down process makes it more efficient in solving each individual problem
+                separately.
             </div>
             <div class="paper">
-                It is a recursive algorithm which continuously splits an array in half until it cannot be further divided. So this means The base case to stop the recursion is when there is either no elements in the array or at least one element. However if the array has multiple elements, split the array into halves and recursively invoke the merge sort on each of the halves. Lastly, when both halves are sorted, the merge operation is applied. Merge operation is a action of taking two smaller sorted arrays and combining them to eventually make a larger one. In the end each piece merges to create a new sorted array.
+                It is a recursive algorithm which continuously splits an array in half until it cannot be further
+                divided. So this means The base case to stop the recursion is when there is either no elements in the
+                array or at least one element. However if the array has multiple elements, split the array into halves
+                and recursively invoke the merge sort on each of the halves. Lastly, when both halves are sorted, the
+                merge operation is applied. Merge operation is a action of taking two smaller sorted arrays and
+                combining them to eventually make a larger one. In the end each piece merges to create a new sorted
+                array.
             </div>
-            
+
             <p>Here is an image showing the mergesort algorithm</p>
             <img width="600px" class="img-fluid" src="css/img/Merge-Sort-Algorithm.png" alt="">
             <div class="paper">
-               <p>
-                Merge sort has a time complexity of O(n log n), making it a good choice for sorting large lists. It is a stable sort, meaning that the relative order of elements with equal keys is preserved by the sort. Merge sort is also an example of a divide-and-conquer algorithm. Check out what <span style="font-weight: bold;">time complexity</span> is in my <span><a href="Program_concepts.html">programming concepts</a></span> page 
-               </p>
+                <p>
+                    Merge sort has a time complexity of O(n log n), making it a good choice for sorting large lists. It
+                    is a stable sort, meaning that the relative order of elements with equal keys is preserved by the
+                    sort. Merge sort is also an example of a divide-and-conquer algorithm. Check out what <span
+                        style="font-weight: bold;">time complexity</span> is in my <span><a
+                            href="Program_concepts.html">programming concepts</a></span> page
+                </p>
             </div>
             <h1 id="quicksort" class="pt-5">Quick Sort</h1>
             <div class="paper">
-                Quicksort is an efficient sorting algorithm that like mergesort uses a divide-and-conquer approach to sort a list of items. It works by selecting a "pivot" element from the list, and partitioning the other elements into two lists based on whether they are less than or greater than the pivot. The two sublists are then recursively sorted using the same quicksort algorithm.
+                <p>
+                    Quicksort is an efficient sorting algorithm that like mergesort uses a divide-and-conquer approach
+                    to
+                    sort a list of items. It works by selecting a "pivot" element from the list, and partitioning the
+                    other
+                    elements into two lists based on whether they are less than or greater than the pivot. The two
+                    sublists
+                    are then recursively sorted using the same quicksort algorithm.
+                </p>
             </div>
+            <p>Here is a video on how to quicksort works.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hoixgm4-P4M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="paper">
+
+                <p>Quicksort has a time complexity of O(n log n), making it a fast and efficient sorting algorithm for
+                    large lists. However, it is not a stable sort, meaning that the relative order of elements with
+                    equal keys may be changed by the sort. Read about <span>Stable Sorts at </span><span><a
+                            href="https://www.freecodecamp.org/news/stability-in-sorting-algorithms-a-treatment-of-equality-fa3140a5a539/">FreeCodeCamp</a></span>
+                </p>
+            </div>
+            <h1 id="selectionsort" class="pt-5">Selection Sort</h1>
+            <div class="paper">
+
+                <p>
+                    Selection sort works by repeatedly finding the
+                    minimum element from the unsorted part of the list and adding it to the sorted part of the list. In every iteration of selection sort, the minimum element (given ascending order) from the unsorted subarray is picked and moved to the beginning of unsorted subarray. 
+                    After every iteration the sorted subarray size increases by one and the unsorted subarray size decrease by one.
+                </p>
+            </div>
+            <div class="paper">
+                <p>
+                    Selection sort has a time complexity of O(n^2), making it less efficient than other sorting algorithms for large lists. However, it has the advantage of being simple to implement and requiring a small amount of additional memory. Selection sort is not a stable sort, meaning that the relative order of elements with equal keys may be changed by the sort.
+                </p>
+            </div>
+
+              
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g-PGLbMth_g"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+           
+                <h1 id="heapsort" class="pt-5">Heap Sort</h1>
+                <div class="paper text-start d-flex flex-column">
+    
+                    <p>
+                        Heapsort is a comparison-based sorting algorithm that uses a binary heap data structure. It has two main steps:
+                    </p>
+                </div>
+                <div class="paper text-start">
+                    1. Building a heap: This step rearranges the array into a binary heap, which is a complete binary tree with the property that the value of each parent node is greater than or equal to the values of its children. This step takes O(n) time.
+                </div>
+                <div class="paper text-start">
+                    2. Sorting the heap: This step repeatedly removes the maximum element from the heap and puts it at the end of the sorted array. This step takes O(nlogn) time, since there are n elements in the heap and removing the maximum element from the heap takes log(n) time.
+                </div>
+                
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2DmK_H7IdTo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+                <div class="paper text-start">
+                    Overall, heapsort has a time complexity of O(nlogn). It is not an in-place sort, since it requires an additional array to store the sorted elements. However, it is relatively simple to implement and has good performance in practice.
+                </div>
+
+
         </section>
+
+
+
         <section class="content3">
 
         </section>
