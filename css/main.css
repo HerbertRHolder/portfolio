@@ -688,7 +688,7 @@ svg {
   display: grid;
   height: 100vh;
   grid-template-columns: 0.2fr 1fr;
-  grid-template-rows: 0.3fr 1fr 0.3fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   grid-template-areas: "title title" "content1 content1" "content2 content2" "content3 content3";
 }
 
@@ -748,9 +748,15 @@ body.algo {
 .content2 {
   grid-area: content2;
 }
+.content2 .cover-letter {
+  border-radius: 0.5rem;
+  background: none !important;
+  background-color: #ffffff !important;
+}
 
 .content3 {
   grid-area: content3;
+  outline: dashed red;
 }
 
 .offcanvas, .offcanvas-lg,

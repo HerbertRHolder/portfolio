@@ -7,7 +7,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: .2fr 1fr;
-    grid-template-rows: 0.3fr 1fr .3fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-areas:
         "title title"
         "content1 content1"
@@ -73,12 +73,21 @@ body.algo {
 
 .content2 {
     grid-area: content2;
+    // outline: dashed red;
+    .cover-letter{
+        border-radius: .5rem;
+        background: none !important;
+        background-color: #ffffff !important;
+    }
 
 }
 
 .content3 {
     grid-area: content3;
+    outline: dashed red;
 }
+
+
 
 
 
@@ -86,16 +95,7 @@ body.algo {
 .offcanvas, .offcanvas-lg, 
 .offcanvas-md, .offcanvas-sm, 
 .offcanvas-xl, .offcanvas-xxl {
-//     // --bs-offcanvas-zindex: 1045;
-//     --bs-offcanvas-width: 216px;
-//     // --bs-offcanvas-height: 30vh;
-//     // --bs-offcanvas-padding-x: 1rem;
     --bs-offcanvas-padding-y: .5rem;
-//     // --bs-offcanvas-color: ;
-//     // --bs-offcanvas-bg: #fff;
-//     // --bs-offcanvas-border-width: 1px;
-//     // --bs-offcanvas-border-color: var(--bs-border-color-translucent);
-//     // --bs-offcanvas-box-shadow: 0 0.125rem 0.25remrgba(0, 0, 0, 0.075);
 }
 
 
