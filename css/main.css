@@ -748,10 +748,22 @@ body.algo {
 .content2 {
   grid-area: content2;
 }
-.content2 .cover-letter {
+.content2 .paper {
   border-radius: 0.5rem;
-  background: none !important;
   background-color: #ffffff !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .content3 {
