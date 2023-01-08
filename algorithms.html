@@ -182,20 +182,32 @@
         </section>
         <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
             <h1 id="intro">Introduction</h1>
-            <div class="cover-letter"  data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">Data structures and algorithms are fundamental concepts in computer science. Data structures are used to organize and store data efficiently, while algorithms are used to manipulate and process that data. Together, data structures and algorithms form the basis of many computer programs, and they are essential tools for improving the efficiency and performance of those programs. The study of data structures and algorithms is an important part of computer science because these concepts are used to design and analyze efficient solutions to a wide variety of problems.
+            <div class="cover-letter"  data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas"><p class="text-center">
+                Data structures and algorithms are fundamental concepts in computer science. Data structures are used to organize and store data efficiently, while algorithms are used to manipulate and process that data. Together, data structures and algorithms form the basis of many computer programs, and they are essential tools for improving the efficiency and performance of those programs. The study of data structures and algorithms is an important part of computer science because these concepts are used to design and analyze efficient solutions to a wide variety of problems. Feeling Nerdy?...Well Check out my Algorithms analysis project in C++ on <span><a style="color:#ffffff !important; text-decoration:underline;" href="https://replit.com/@HerbertRHolder/SortingProject20#main.cpp">Replit!</a></span> and <span><a style="color:#ffffff !important; text-decoration:underline;" href=" https://github.com/HerbertRHolder/Algorithm-Analysis/blob/master/main.cpp">Github</a></span>
+            </p>
             </div>
         </section>
         <section class="content2 text-center pt-5 d-flex gap-3 justify-content-start flex-column align-items-center">
             <h1 id="mergesort">Merge Sort</h1>
             <div class="paper">
                 One algorithm we can talk about is the mergesort algorithm. It is an 
-                algorithm that uses a technique known as divide and conquer which breaks down a problem into smaller pieces. This breaking down process makes it more efficient in solving each individual problem separately.  
+                algorithm that uses a technique known as divide-and-conquer which breaks down a problem into smaller pieces. This breaking down process makes it more efficient in solving each individual problem separately.  
             </div>
             <div class="paper">
                 It is a recursive algorithm which continuously splits an array in half until it cannot be further divided. So this means The base case to stop the recursion is when there is either no elements in the array or at least one element. However if the array has multiple elements, split the array into halves and recursively invoke the merge sort on each of the halves. Lastly, when both halves are sorted, the merge operation is applied. Merge operation is a action of taking two smaller sorted arrays and combining them to eventually make a larger one. In the end each piece merges to create a new sorted array.
             </div>
+            
             <p>Here is an image showing the mergesort algorithm</p>
             <img width="600px" class="img-fluid" src="css/img/Merge-Sort-Algorithm.png" alt="">
+            <div class="paper">
+               <p>
+                Merge sort has a time complexity of O(n log n), making it a good choice for sorting large lists. It is a stable sort, meaning that the relative order of elements with equal keys is preserved by the sort. Merge sort is also an example of a divide-and-conquer algorithm. Check out what <span style="font-weight: bold;">time complexity</span> is in my <span><a href="Program_concepts.html">programming concepts</a></span> page 
+               </p>
+            </div>
+            <h1 id="quicksort" class="pt-5">Quick Sort</h1>
+            <div class="paper">
+                Quicksort is an efficient sorting algorithm that like mergesort uses a divide-and-conquer approach to sort a list of items. It works by selecting a "pivot" element from the list, and partitioning the other elements into two lists based on whether they are less than or greater than the pivot. The two sublists are then recursively sorted using the same quicksort algorithm.
+            </div>
         </section>
         <section class="content3">
 
