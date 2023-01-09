@@ -19,6 +19,7 @@ html {
 
 body {
   overflow-x: hidden;
+  min-height: 100%;
   background-color: #dee1e6;
 }
 
@@ -579,6 +580,9 @@ ul {
 .footer {
   padding-bottom: 5rem;
   background-color: #16103a !important;
+  position: relative !important;
+  top: 100%;
+  margin-top: 7rem !important;
 }
 
 svg {
@@ -681,19 +685,26 @@ svg {
 }
 
 .algo-main {
-  position: relative;
+  position: relative !important;
   width: 100%;
+  min-height: fit-content;
   top: calc(72px + 1rem);
-  min-height: 100%;
   display: grid;
-  height: 100vh;
   grid-template-columns: 0.2fr 1fr;
-  grid-template-rows: 0.3fr 1fr 1fr;
-  grid-template-areas: "title title" "content1 content1" "content2 content2" "content3 content3";
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+  grid-template-areas: "title title" "content1 content1" "content2 content2";
 }
 
 body.algo {
   background-color: #dee1e6;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.algo-main {
+  min-height: fit-content;
 }
 
 .offcanvas-mini {
@@ -770,11 +781,6 @@ body.algo {
   text-decoration: underline;
 }
 
-.content3 {
-  grid-area: content3;
-  outline: dashed red;
-}
-
 .offcanvas, .offcanvas-lg,
 .offcanvas-md, .offcanvas-sm,
 .offcanvas-xl, .offcanvas-xxl {
@@ -825,7 +831,7 @@ body.algo {
 }
 @media (max-width: 700px) {
   .algo-main {
-    grid-template-columns: 0.2fr 2fr;
+    grid-template-columns: 0.1fr 2fr;
   }
   .table-of-content-btn {
     background-color: #3687E8;
