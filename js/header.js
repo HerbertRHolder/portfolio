@@ -42,7 +42,11 @@
     }
     container.addEventListener("click", menuTransform)
     
-    
+    let emailForm = document.getElementById("send-email");
+    console.log(emailForm);
+    emailForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+    });
 
 
 
