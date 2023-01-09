@@ -753,13 +753,18 @@ main.algo-main {
   align-items: center;
 }
 .content1 .cover-letter:hover {
-  transform: translateY(0%);
+  transform: translateY(-20%);
 }
 
-.content2 {
-  grid-area: content2;
+.blu {
+  background: hsl(213deg, 80%, 57%);
+  background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%);
 }
-.content2 .paper {
+.blu span a {
+  color: #ffffff !important;
+}
+
+.paper {
   border-radius: 0.5rem;
   background-color: #ffffff !important;
   font-size: 1rem;
@@ -776,9 +781,13 @@ main.algo-main {
   padding-bottom: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.content2 .paper p span a {
+.paper p span a {
   color: black;
   text-decoration: underline;
+}
+
+.content2 {
+  grid-area: content2;
 }
 
 .offcanvas, .offcanvas-lg,
@@ -812,7 +821,7 @@ main.algo-main {
 }
 
 .offcanvas.offcanvas-top {
-  height: 200px;
+  height: 320px;
   max-height: 100%;
   border-bottom: solid 0 !important;
   transform: translateY(-100%);

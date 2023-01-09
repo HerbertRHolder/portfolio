@@ -72,50 +72,48 @@ main.algo-main {
     justify-content: center;
     align-items: center;
     .cover-letter:hover{
-        transform: translateY(0%);
+        transform: translateY(-20%);
+        // transition: none !important;
     }
 }
-
-.content2 {
-    grid-area: content2;
-    // outline: dashed red;
-    .paper{
-        border-radius: .5rem;
-        background-color: #ffffff !important;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        text-align: center;
-        width: 90%;
-        max-width: 800px;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        p{
-            span{
-                a{
-                    color: black;
-                    text-decoration: underline;
-                }
+.blu{
+    background: hsla(213, 80%, 57%, 1);
+    background: -webkit-linear-gradient(180deg, hsla(213, 80%, 57%, 1) 0%, hsla(212, 74%, 73%, 1) 100%);
+    span {
+        a{
+            color: #ffffff !important;
+        }
+    }
+   
+}
+.paper{
+    border-radius: .5rem;
+    background-color: #ffffff !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    p{
+        span{
+            a{
+                color: black;
+                text-decoration: underline;
             }
         }
     }
-
 }
-
-// .content3 {
-//     grid-area: content3;
-//     outline: dashed red;
-// }
-
-
-
-
-
+.content2 {
+    grid-area: content2;
+}
 
 .offcanvas, .offcanvas-lg, 
 .offcanvas-md, .offcanvas-sm, 
@@ -123,11 +121,6 @@ main.algo-main {
     --bs-offcanvas-padding-y: .5rem;
 }
 
-
-// .offcanvas.offcanvas-start {
-//     top: calc(3.5rem + 4px);
-//     left: 0;
-// }
 .offcanvas.offcanvas-top {
     border-radius: .5rem;
     width: 150px !important;
@@ -154,7 +147,7 @@ main.algo-main {
 }
 
 .offcanvas.offcanvas-top {
-    height: 200px;
+    height: 320px;
     max-height: 100%;
     border-bottom: solid 0 !important;
     transform: translateY(-100%);

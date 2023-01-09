@@ -117,11 +117,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Favorite Books</a>
                         </li>
-                        <!-- <li class="nav-item ">
-                            <button type="button" class="btn btn-color" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact</button>
-                        </li> -->
-
                     </ul>
                     <h2 class="mb-2">Github</h2>
                     <a href="https://github.com/HerbertRHolder"><img width="100px" src="css/img/octocat.png" alt=""></a>
@@ -142,7 +137,8 @@
                 <a href="#quicksort">Quick Sort</a>
                 <a href="#selectionsort">Selection Sort</a>
                 <a href="#heapsort">heapsort</a>
-                <a href="#">dataStructures</a>
+                <a href="#datastructures">dataStructures</a>
+                <a href="#linkedlist">Linked Lists</a>
             </section>
 
         </div>
@@ -165,7 +161,7 @@
         </section>
         <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
             <h1 id="intro">Introduction</h1>
-            <div class="cover-letter" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+            <div class="paper blu" >
                 <p class="text-center">
                     Data structures and algorithms are fundamental concepts in computer science. Data structures are
                     used to organize and store data efficiently, while algorithms are used to manipulate and process
@@ -280,8 +276,29 @@
                 <div class="paper text-start">
                     Overall, heapsort has a time complexity of O(nlogn). It is not an in-place sort, since it requires an additional array to store the sorted elements. However, it is relatively simple to implement and has good performance in practice.
                 </div>
+                <h1 id="datastructures" class="pt-5">Data Structures</h1>
 
-
+                <div class="paper blu">
+                    <p>
+                        Data structures are used to store and organize data in a computer so that it can be accessed and modified efficiently. There are many different types of data structures, including arrays, linked lists, stacks, queues, trees, and graphs. Each type of data structure is designed to store data in a specific way, and has its own advantages and disadvantages. Some data structures are better suited for certain tasks, while others may be more efficient for different types of data or operations. Understanding the characteristics and trade-offs of different data structures is an important part of designing and implementing efficient algorithms and software systems. I would highly suggest you look at my recommended books in the <span><a href="Favorite-books.html">Favorite books section</a>
+                        </span>
+                    </p>
+                </div>
+                <h1 id="#linkedlist">
+                    Linked lists
+                </h1>
+                <div class="paper">
+                    <p>
+                        A linked list is a linear data structure in which each element is a separate object, consisting of a node and a reference (link) to the next node in the sequence. The main advantage of linked lists over arrays is that elements can be inserted or removed from the list without reallocation or reorganization of the entire structure. However, linked lists require more memory overhead to store the references, so they are less efficient for cases where the size of the list is fixed or the majority of operations are element access rather than insertion or deletion. The size flexibility in linked lists can make them use less memory overall. This is useful when there is uncertainty about size or there are large variations in the size of data elements.
+                    </p>
+                </div>
+                <p>To get a visual, heres an image of a linked list</p>
+                <img class="img-fluid" src="css/img/Linked-list-nodes.png" alt="">
+                <div class="paper">
+                    <p>
+                        Here you can see that a linked list consists of a series of node objects. Each node object has an address and a data attribute. In C++, the address is known to be stored in a pointer object. Each pointer object points to each node with a memory address location number, usually this is in hexadecimal. Check out my linked list on <span><a href="https://replit.com/@HerbertRHolder/linklist#main.cpp">Replit!</a></span> and on <span><a href="https://github.com/HerbertRHolder/linkedlist/blob/master/main.cpp">Github</a></span>
+                    </p>
+                </div>
         </section>
 
     </main>
