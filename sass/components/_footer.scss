@@ -1,8 +1,16 @@
 // TODO change the color of the footer to the one bellow
 .footer {
+    position: relative;
     padding-bottom: 5rem;
     background-color: #16103a !important;
     position: relative !important;
     top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 7rem !important;
+}
+.foot-contact{
+    position: relative;
+    transform: translateY(30%);
 }
